@@ -5,4 +5,7 @@ newrelic:
     - NEW_RELIC_LICENSE_KEY=<YOUR-KEY>
   volumes:
     - '/var/run/docker.sock:/var/run/docker.sock'
+    - '/dev:/dev'
+    - '/sys:/sys'
+    - '/proc:/proc'
 
