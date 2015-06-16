@@ -1,4 +1,5 @@
 # newrelic-docker-host
+## Collect analytics from the *host* where this container is deployed.
 
 Built from instructions here: https://discuss.newrelic.com/t/how-to-try-out-the-docker-beta/19478/8
 
