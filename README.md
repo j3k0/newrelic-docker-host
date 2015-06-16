@@ -1,6 +1,8 @@
 # newrelic-docker-host
 ## Collect analytics from the *host* where this container is deployed.
 
+[![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
+
 Built from instructions here: https://discuss.newrelic.com/t/how-to-try-out-the-docker-beta/19478/8
 
 To run locally add your New Relic license key to the docker-compose file (don't check it in!) and run docker-compose as normal.
