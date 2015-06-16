@@ -17,6 +17,10 @@ newrelic:
 
 If you use Tutum then create a stack using `stack.yml` (with your key edited in). That's it!
 
+Now in New Relic you should see:
+
+![Screenshot of New Relic](https://www.dropbox.com/s/k6s5lzr0j4pvdmr/Screenshot%202015-06-16%2021.14.21.png)
+
 ##Caveats
 
 At the moment we can't map /proc on Tutum so Newrelic will show child process information, however it will correctly show hosted container information. Watch this space.
