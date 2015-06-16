@@ -1,5 +1,7 @@
 # newrelic-docker-host
 
+Built from instructions here: https://discuss.newrelic.com/t/how-to-try-out-the-docker-beta/19478/8
+
 To run locally add your New Relic license key to the docker-compose file (don't check it in!) and run docker-compose as normal.
 
 ```
