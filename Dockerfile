@@ -8,7 +8,7 @@
 # support for environment variables was added.
 #
 
-FROM alpine
+FROM ubuntu
 MAINTAINER New Relic <support@newrelic.com>
 
 # The following line requires Docker 1.6 but is ignored by earlier versions,
