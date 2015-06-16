@@ -19,7 +19,7 @@ If you use Tutum then create a stack using `stack.yml` (with your key edited in)
 
 Now in New Relic you should see:
 
-![Screenshot of New Relic](https://www.dropbox.com/s/k6s5lzr0j4pvdmr/Screenshot%202015-06-16%2021.14.21.png)
+![Screenshot of New Relic](https://www.dropbox.com/s/k6s5lzr0j4pvdmr/Screenshot%202015-06-16%2021.14.21.png?dl=0)
 
 ##Caveats
 
