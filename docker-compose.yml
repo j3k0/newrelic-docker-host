@@ -1,0 +1,8 @@
+newrelic:
+  build: .
+  privileged: true
+  environment:
+    - NEW_RELIC_LICENSE_KEY=<YOUR-KEY>
+  volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'
+
