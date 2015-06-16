@@ -8,16 +8,19 @@
 # support for environment variables was added.
 #
 
-FROM alpine
+FROM ubuntu
 MAINTAINER New Relic <support@newrelic.com>
 
 # The following line requires Docker 1.6 but is ignored by earlier versions,
 # albeit with a warning.
 LABEL Description="New Relic Linux Server Monitor" vendor="New Relic Inc."
 
-ADD daemon/nrsysmond.x64 /usr/sbin/nrsysmond
+COPY daemon/nrsysmond.x64 /usr/sbin/nrsysmond
 RUN chmod 755 /usr/sbin/nrsysmond
-
+RUN ls -la /usr/sbin/*
 ENV NEW_RELIC_LICENSE_KEY changeme
 ENV NEW_RELIC_DEBUG verbose
-CMD ["/usr/sbin/nrsysmond","-F","-E","-l","/dev/stdout"]
+RUN nrsysmond-config --set license_key=$NEW_RELIC_LICENSE_KEY
+ADD run.sh run.sh
+RUN chmod 755 run.sh
+CMD run.sh
