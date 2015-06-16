@@ -2,7 +2,7 @@ newrelic:
   image: vizzbuzz/newrelic-docker-host
   volumes:
     - dev:dev
-    - proc:proc
+#    - proc:proc
     - sys:sys
   roles:
     - global
