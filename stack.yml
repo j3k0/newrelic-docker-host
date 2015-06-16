@@ -1,0 +1,8 @@
+newrelic:
+  image: vizzbuzz/newrelic-docker-host
+  roles:
+    - global
+  environment:
+    - NEW_RELIC_LICENSE_KEY=CHANGEME
+  deployment_strategy: every_node
+  
