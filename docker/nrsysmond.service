@@ -1,0 +1,24 @@
+[Unit]
+Description=New Relic Linux Server Monitor (nrsysmond)
+After=docker.service
+Requires=docker.service
+
+[Service]
+TimeoutStartSec=10m
+ExecStartPre=-/usr/bin/docker kill nrsysmond
+ExecStartPre=-/usr/bin/docker rm nrsysmond
+ExecStartPre=/usr/bin/docker pull newrelic/nrsysmond
+ExecStart=/usr/bin/docker run --name nrsysmond --rm \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v /proc:/proc -v /sys:/sys -v /dev:/dev --privileged=true --net=host \
+  -e NRSYSMOND_license_key=REPLACE_WITH_YOUR_REAL_KEY \
+  -e NRSYSMOND_loglevel=info \
+  -e NRSYSMOND_hostname=%H \
+  newrelic/nrsysmond:latest
+ExecStop=/usr/bin/docker stop -t 30 nrsysmond
+
+[Install]
+WantedBy=multi-user.target
+
+[X-Fleet]
+Global=true

@@ -1,0 +1,15 @@
+00fd0f13c8bdd6836d867ace693ffb72 *nrsysmond.cfg
+7a9bf0303c69695effc730f9c544864a *Dockerfile
+be0c9c3f5852a3f9acd2e40be62bca0f *daemon/nrsysmond.x86
+14c90817c08090f32f0952b56bd493cf *daemon/nrsysmond.x64
+7ec0afa52754577dec92d53d861ad166 *scripts/nrsysmond-config
+b0c989ee748c95d28cf2bd92dd675e9d *scripts/newrelic-sysmond.sysconfig.rhel
+85398b3e13689b4fba4632c7f7eee2dd *scripts/newrelic-sysmond.init.rhel
+c0a864f84457f8b47529aa2417d0c8ad *scripts/newrelic-sysmond.init.debian
+b0c989ee748c95d28cf2bd92dd675e9d *scripts/newrelic-sysmond.default.debian
+9b83733a6802177735b1e10b9bfbcda8 *INSTALL.txt
+0e774c49656a1b8e8434493f0249b944 *docker/nrsysmond.service
+2f1cc1ed8f5ef27e9141daaa68cdc62a *docker/build-docker-image
+139eb4da11521d156e54a4766789a824 *docker/run-docker-image
+03525f137156e8f2e34d7e81807a3a3b *nrsysmondversion.sh
+3a06412cf184fc109e5aa78a2c69b3e3 *LICENSE.txt

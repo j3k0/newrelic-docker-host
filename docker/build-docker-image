@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#
+# Shell script to create a Dockerfile from a template, populating certain key
+# values, and to then build a Docker image. Requires that you are already
+# logged in to Docker Hub.
+#
+if [ ! -f nrsysmondversion.sh ]; then
+  echo "Error: must invoke from the top level of the extracted tar directory"
+  exit 1
+fi
+
+. ./nrsysmondversion.sh
+
+if [ -n "${DOCKERHUB_NAME}" ]; then
+  rootname="${DOCKERHUB_NAME}"
+else
+  rootname="${LOGNAME}"
+fi
+
+docker build -t ${rootname}/nrsysmond:${nrsysmondversion} -t ${rootname}/nrsysmond:latest .
