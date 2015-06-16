@@ -20,7 +20,7 @@ newrelic:
     - '/proc:/proc'
 ```    
 
-If you use Tutum then create a stack using `stack.yml` (with your key edited in). That's it!
+If you use Tutum then create a stack using `tutum.yml` (with your key edited in). That's it!
 
 Now in New Relic you should see:
 
