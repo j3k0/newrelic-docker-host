@@ -17,6 +17,6 @@ LABEL Description="New Relic Linux Server Monitor" vendor="New Relic Inc."
 
 ADD daemon/nrsysmond.x64 /usr/sbin/nrsysmond
 
-ENV NEW_RELIC_LICENSE_KEY 
+ENV NEW_RELIC_LICENSE_KEY changeme
 ENV NEW_RELIC_DEBUG verbose
 CMD /usr/sbin/nrsysmond -F -E -l /dev/stdout
