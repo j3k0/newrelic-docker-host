@@ -1,6 +1,7 @@
 newrelic:
   image: vizzbuzz/newrelic-docker-host
   volumes:
+    - '/var/run/docker.sock:/var/run/docker.sock'  
     - dev:dev
 #    - proc:proc
     - sys:sys
