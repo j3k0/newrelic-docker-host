@@ -20,4 +20,4 @@ RUN chmod 755 /usr/sbin/nrsysmond
 
 ENV NEW_RELIC_LICENSE_KEY changeme
 ENV NEW_RELIC_DEBUG verbose
-CMD ["/usr/sbin/nrsysmond","-F","-E","-l",""/dev/stdout"]
+CMD ["/usr/sbin/nrsysmond","-F","-E","-l","/dev/stdout"]
