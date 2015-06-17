@@ -5,22 +5,11 @@
 
 Built from instructions here: https://discuss.newrelic.com/t/how-to-try-out-the-docker-beta/19478/8
 
+The purpose of this image is to monitor sibling Docker containers on a host using New Relic in much the same way as if the monitoring software was deployed directly on the host. There is a definite bias towards using Tutum (an excellent commercial Docker hosting company) here but it should work fine on any Docker host. If you would like to try this out just click on the 'Deploy to Tutum' button above and it will be deployed to all your Tutum nodes. That's it!
+
+If you use Tutum you can also manually create a stack using `tutum.yml` (with your key edited in). 
+
 To run locally add your New Relic license key to the docker-compose file (don't check it in!) and run docker-compose as normal.
-
-```
-newrelic:
-  build: .
-  privileged: true
-  environment:
-    - NEW_RELIC_LICENSE_KEY=<YOUR-KEY>
-  volumes:
-    - '/var/run/docker.sock:/var/run/docker.sock'
-    - '/dev:/dev'
-    - '/sys:/sys'
-    - '/proc:/proc'
-```    
-
-If you use Tutum then create a stack using `tutum.yml` (with your key edited in). That's it!
 
 Now in New Relic you should see:
 
