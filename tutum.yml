@@ -5,6 +5,10 @@ newrelic:
     - '/dev:/dev'
 #    - '/proc:/proc'
     - '/sys:/sys'
+  autorestart: always
+  privileged: true
+  cpu_shares: 256
+  mem_limit: 128m
   roles:
     - global
   environment:
