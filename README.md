@@ -19,3 +19,6 @@ Now in New Relic you should see:
 
 At the moment we can't map /proc on Tutum so Newrelic will show child process information, however it will correctly show hosted container information. Watch this space.
 
+[![](https://badge.imagelayers.io/vizzbuzz/newrelic-docker-host.svg)](https://imagelayers.io/?images=vizzbuzz/newrelic-docker-host:latest 'Get your own badge on imagelayers.io')
+
+
