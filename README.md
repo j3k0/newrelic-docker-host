@@ -1,4 +1,7 @@
 # newrelic-docker-host
+
+# You may wish to use the official tutum/newrelic-agent now, however this image is kept for historical purposes :)
+
 ## Collect analytics from the *host* where this container is deployed.
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
